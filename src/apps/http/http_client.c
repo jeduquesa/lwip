@@ -760,7 +760,7 @@
   * @param server_name server name as string (DNS name or IP address string)
   * @param port tcp port of the server
   * @param request_string the complete HTTP request string (including method, headers, etc.)
-  * @param request_len the length of the request string
+  * @param request_len the length of the request string (Note: add +1 if snprintf was used to calculate it)
   * @param settings connection settings (callbacks, proxy, etc.)
   * @param recv_fn the http body (not the headers) are passed to this callback
   * @param callback_arg argument passed to all the callbacks
